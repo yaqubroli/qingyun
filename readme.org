@@ -1,0 +1,31 @@
+* Linux on Huawei Qingyun W515x
+
+** Right now, this repo contains:
+
+- Device tree extracted from W515x running Gentoo, but with Tongxin UOS 1070/eagle kernel
+  - This tree has to be corrected with proper voltage information since ~dtc~ extracts malformed voltage data for the CPUs
+- Script for extracting voltage data
+
+** Ideally I want:
+
+- Some sort of makefile/script for compiling a kernel that /will/ run
+- Releases of contemporary standard linux pushed regularly, but infrequently (monthly)
+
+*** Note for Chinese readers:
+
+I am not Chinese, and Chinese is not my first language. As a result, I probably lack access to online wisdom regarding this chipset. The only relevant info I could find was from [[https://blog.umu618.com/2024/07/07/umutech-install-debian-12-on-w515/][UMU's blog]], which got me running Gentoo, but with an outdated kernel. Thanks UMU though!
+
+* 华为擎云 W515x 上运行 Linux
+
+** 当前仓库包含：
+- 从运行 Gentoo 的 W515x 中提取的设备树，但内核使用的是统信 UOS 1070/eagle
+  - 该设备树需要修正电压信息，因为 ~dtc~ 工具提取的 CPU 电压数据格式错误
+- 提取电压数据的脚本
+
+** 理想目标：
+- 一个用于编译可运行内核的 Makefile 或脚本
+- 定期（如每月）发布标准 Linux 的更新版本（频率不高）
+
+** 给中国读者的说明：
+我不是中国人，中文也不是我的母语。因此，我可能无法获取关于该芯片组的中文网络资料。我唯一找到的有用信息来自 UMU 的博客，它帮助我运行了 Gentoo，但内核版本较旧。  
+仍然感谢 UMU！
