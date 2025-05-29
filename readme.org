@@ -1,3 +1,17 @@
+* Update: I've reached an impasse
+
+As it turns out, the reason that Tongxin's kernels boot on the Kirin 9000c but the ones I compile don't might have nothing to do with device trees. There is actually [[https://lkml.iu.edu/hypermail/linux/kernel/1506.0/03066.html][no support for embedding device trees in a kernel image on arm64]] and so whatever is different between Tongxin's kernel and mine, it's not the device tree.
+
+I will buy a null modem cable and investigate (I hope the 9-pin port on the back works for kernel debugging) and then report back. Again, any ARM/embedded experts who are familiar with this, get in contact if you can provide some guidance.
+
+** 中文版
+
+事实证明，统信的内核能够在麒麟 9000c 上启动，而我编译的内核却不能，原因可能与设备树无关。实际上，在 arm64 架构上，内核镜像并不支持嵌入设备树，所以统信 的内核和我的内核之间的区别，并不是设备树的问题。
+
+我会买一根空调制解调器线，进行调查（老天爷保佑背后的 9 针串口能用于内核调试），然后再汇报进展。如果有哪位道友对此熟悉，请提供你所掌握的信息。
+
+
+
 * Linux on Huawei Qingyun W515x
 
 ** Right now, this repo contains:
